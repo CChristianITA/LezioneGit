@@ -1,0 +1,46 @@
+h1 {
+  animation-name: h1zoom;
+  animation-duration: 0.6s;
+  animation-iteration-count: initial;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+@keyframes h1zoom {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(3);
+  }
+}
+#hero a:hover {
+  animation-name: btnzoom;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes btnzoom {
+  to {
+    transform: translatey(100px);
+  }
+}
+.card img:hover {
+  animation-name: cardzoom;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes cardzoom {
+  from {
+    filter: grayscale(100%);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+.card {
+  overflow: hidden;
+}
